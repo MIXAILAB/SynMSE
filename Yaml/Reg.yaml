@@ -1,0 +1,38 @@
+#####
+name: Registration
+port: 8097   #  port parameters for visdom
+
+save_root: '/opt/data/private/SynMSE-main/output/Reg/'
+
+evaluator_root: '/opt/data/private/SynMSE-main/output/Eva/Evaluator.pth'  # evaluator_root: /opt/data/private/IMSE-clinic/IMSE-3D-Pure/output_mr_ctstyle_pre/Eva/Evaluator_595.pth '/opt/data/private/IMSE-cyclegan/IMSE-3D-Pure/output_t2_t1style/Eva/Evaluator_21.pth'
+dataroot: '/opt/data/private/dataset/clinic_mrct/train/'    # root directory of the train dataset
+testroot: '/opt/data/private/dataset/clinic_mrct/test/'
+
+
+epoch: 1      # starting epoch
+n_epochs: 1000       # How often do you want to display output images during training
+batchSize: 1              # size of the batches
+
+lr: 0.0001                   # initial learning rate
+size: [32, 256, 384]         # D H W
+depth: 32   # D
+input_nc: 2         
+output_nc: 1
+
+
+sim_w: 2                #Similarity weight
+smooth_w: 1               # smooth weight
+unet_features: [[16, 32, 32, 64, 64], [64, 64, 32, 32, 16, 16]]     # [[16, 32, 32, 32, 32], [32, 32, 32, 32, 16, 16]]
+diff: 0   # Differential homeomorphism
+cuda: True                
+n_cpu: 7
+
+
+# affine
+rotation: 3        # range of rotation if use affine
+translation: 0.08    # range of translation if use affine
+scaling: 0.08      # range of scaling if use affine
+
+# non affine
+non_affine_alpha: 150
+gaussian_smoothing: 12
