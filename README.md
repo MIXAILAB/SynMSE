@@ -1,7 +1,10 @@
 # SynMSE
 ![bat](./SynMSE.png)
 
-This paper has been accepted by [MedIA]
+📄 Paper: SynMSE: A multimodal similarity evaluator for complex distribution discrepancy in unsupervised deformable multimodal medical image registration
+✍️ Authors: [Jingke Zhu] et al.
+📍 Published in: Medical Image Analysis, 2025
+🧱 Link: https://www.sciencedirect.com/science/article/pii/S1361841525001677
 
 ## Usage
 1. You need to pre-train a CycleGAN model for distribution transfer and replace the path with your own generative model in trainer/cyclegan_syn.
