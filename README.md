@@ -2,8 +2,11 @@
 ![bat](./SynMSE.png)
 
 📄 Paper: SynMSE: A multimodal similarity evaluator for complex distribution discrepancy in unsupervised deformable multimodal medical image registration
+
 ✍️ Authors: [Jingke Zhu] et al.
+
 📍 Published in: Medical Image Analysis, 2025
+
 🧱 Link: https://www.sciencedirect.com/science/article/pii/S1361841525001677
 
 ## Usage
